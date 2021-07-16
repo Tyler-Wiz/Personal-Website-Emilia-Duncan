@@ -24,6 +24,7 @@ h3{
 
 h4{
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 h5{
@@ -236,7 +237,7 @@ hr {
 }
 
 .slider_items{
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 .slider_items img{
@@ -259,19 +260,6 @@ hr {
 .blogpost_title{
     margin-bottom: 2rem;
 }
-
-/* .blogpost_title:after{
-    content: '';
-    position: absolute;
-    width: 80px;
-    height: 3px;
-    background-color: #520052;
-    margin: 0 auto;
-    right: 0;
-    left: 0;
-    bottom: -rem;
-} */
-
 .blog_slide{
     width: 80%;
     max-width: 1000px;
@@ -286,23 +274,40 @@ hr {
     "two three five"
     "two three five"
     ;
-
 }
-
 .blog_one{
-    min-width: 200px;
+    min-width: 300px;
     height: 200px;
-    background-color: hotpink;
+    background-color: black;
     grid-area: one;
 }
+.blog_one img{
+    width: 300px;
+    height: 200px;
+    opacity: .7;
+}
 
+.blog_tag{
+    background-color: #0a0a0a;
+    max-width: 110px;
+    padding: 3px;
+    position: relative;
+    bottom: 5rem;
+    color: white;
+    box-shadow: 1px 2px 5px rgb(73, 71, 71);
+}
+.blog_one--title{
+    position:relative;
+    bottom: 4.5rem;
+    color:white ;
+    margin:0 10px;
+}
 .blog_two{
     min-width: 200px;
     height: 300px;
     background-color: lavender;
     grid-area: two;
 }
-
 .blog_three{
     min-width: 300px;
     height: 516px;
@@ -311,7 +316,6 @@ hr {
     cursor: pointer;
     transition: background 0.50s;
 }
-
 .blog_three:hover{
     background-color: lightgoldenrodyellow;
 }
@@ -322,13 +326,35 @@ hr {
     background-color: rgb(108, 105, 255);
     grid-area: four;
 }
+
+.blog_four img{
+    width: 300px;
+    height: 200px;
+}
+
+.blog_four--title{
+    position:relative;
+    bottom: 4.5rem;
+    left: 3rem;
+    color:white ;
+}
+
 .blog_five{
     min-width:200px;
     height: 300px;
     background-color: rgb(6, 6, 221);
     grid-area: five;
 }
+.blog_img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
 
+.blog_img img{
+   width: 300px;
+   max-height: 300px;
+}
 
 
 
@@ -456,3 +482,39 @@ footer {
     color: white;
     background-color: #520052;
 }
+
+/* Blog */
+
+.blog {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.blog p {
+    margin-bottom: 1rem;
+}
+
+.blog_title{
+    text-align: center;
+}
+
+.blog_content{
+    line-height: 1.8;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.featured_image img {
+    width: 60%;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+}
+
+blockquote{
+    margin-left: 1rem;
+    border-left: 3px solid #520052;
+    padding: .5rem;
+}
+

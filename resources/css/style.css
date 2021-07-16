@@ -49,6 +49,7 @@ header {
     margin: 1rem auto;
     display: flex;
     justify-content: space-between;
+    max-width: 1000px;
 }
 
 nav ul {
@@ -74,6 +75,7 @@ nav ul a:hover{
 .containerone{
    width: 80%;
    margin: 0 auto;
+   max-width: 1000px;
 }
 
 .main-img img {
@@ -157,6 +159,8 @@ hr {
     margin: 0 auto;
     text-align: center;
     padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-width: 1000px;
 }
 
 .containerthree h2 {
@@ -192,14 +196,18 @@ hr {
     border: 1px solid #D7C1D7 ;
     border-radius: 5px;
     padding: 1rem;
-    margin: 3rem .5em 3rem 0;
+    margin: 2rem 1em 3rem 0;
 }
+.docontainer:hover{
+    background-color: rgb(251, 251, 252);
+}
+
 /* slider */
 
 .slider{
     width: 100%;
     margin: 0 auto;
-    height: 40vh;
+    height: 48vh;
     background-color: #f9f9f9;
     padding-top: 3rem;
     text-align: center;
@@ -228,14 +236,100 @@ hr {
 }
 
 .slider_items{
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
 }
 .slider_items img{
-    padding-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 2rem;
+    width: 10rem;
     /* border: 1px solid grey; */
 }
+
+/* blog section */
+.blogpost {
+    width: 100%;
+    margin: 0 auto;
+    height: 65vh;
+    background-color: #f9f9f9;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.blogpost_title{
+    margin-bottom: 2rem;
+}
+
+/* .blogpost_title:after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #520052;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    bottom: -rem;
+} */
+
+.blog_slide{
+    width: 80%;
+    max-width: 1000px;
+    max-height: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "one three four"
+    "two three five"
+    "two three five"
+    ;
+
+}
+
+.blog_one{
+    min-width: 200px;
+    height: 200px;
+    background-color: hotpink;
+    grid-area: one;
+}
+
+.blog_two{
+    min-width: 200px;
+    height: 300px;
+    background-color: lavender;
+    grid-area: two;
+}
+
+.blog_three{
+    min-width: 300px;
+    height: 516px;
+    background-color: rgb(173, 218, 13);
+    grid-area: three;
+    cursor: pointer;
+    transition: background 0.50s;
+}
+
+.blog_three:hover{
+    background-color: lightgoldenrodyellow;
+}
+
+.blog_four{
+    min-width: 200px;
+    height: 200px;
+    background-color: rgb(108, 105, 255);
+    grid-area: four;
+}
+.blog_five{
+    min-width:200px;
+    height: 300px;
+    background-color: rgb(6, 6, 221);
+    grid-area: five;
+}
+
+
 
 
 /* contact section */
@@ -246,6 +340,7 @@ hr {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-gap: 5em;
+    max-width: 1000px;
     /* display: flex;
     justify-content: space-between; */
 }
@@ -333,7 +428,7 @@ textarea.form__input {
 
 .form__btn {
   width: 100%;
-  max-width: 500px;
+  max-width: 560px;
   font-weight: 600;
   font-size: 1.1em;
   margin: 10px 0;

@@ -4,6 +4,6 @@ $('.slider_items').slick({
     dots:true,
     arrows:false,
     autoplay:true,
-    autoplaySpeed:600,
+    autoplaySpeed:1500,
     infinite:true
 });

@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <title>Emilia Duncan-Sotubo</title>
 </head>
 <body>
@@ -51,24 +55,33 @@
                     </p>
                     <div class="readmore">
                         <a id="read" href="">Read More</a>
-                        <a id="hire" href="">DOWNLOAD CV</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <section class="containertwo">
-            <div class="extext">
-                <h4>My Experience</h4>
-                <hr>
+       <section class="slider">
+           <div class="slider_title">
+               <h2>BRANDS</h2>
+               <div class="slider_title_text">
+               <h4>Brands I Have Worked With</h4>
+               </div>
+           </div>
+           <div class="slider_items">
+                <div><img src="/resources/img/Brand.png" alt=""></div>
+                <div><img src="resources/img/Market.png" alt="marketing"></div>
+                <div><img src="/resources/img/Business.png" alt=""></div>
+                <div><img src="/resources/img/Brand.png" alt=""></div>
+                <div><img src="resources/img/Market.png" alt="marketing"></div>
+                <div><img src="/resources/img/Business.png" alt=""></div>
             </div>
-        </section> -->
+       </section>
         <section class="containerthree">
             <div class="service-text">
                 <h2>SERVICES</h2>
                 <div class="whatido">
-                    <h3>What I Do</h3>
-                    <hr>
+                    <h4>What I Do</h4>
                 </div>
+                <p>With my vast Knowlegde through years of experience, I consult with brands through TED Consulting for the following services </p>
             </div>
             <div class="services">
                 <div class="docontainer">
@@ -106,29 +119,37 @@
                         <hr>
                     </div>
                     <div class="social"> 
-                        <img src="/resources/img/LINKEDIN.png" alt="">
-                        <img src="/resources/img/TWITTER.png" alt="">
-                        <a id="imaghover" href="#"><img src="/resources/img/FB.png" alt=""></a>
-                        <img src="/resources/img/INSTAGRAM.png" alt="">
+                        <a href="#"><img id="linkedin" src="/resources/img/LINKEDIN.png" alt=""></a>
+                        <a href="#"><img id="twitter" src="/resources/img/TWITTER.png" alt=""></a>
+                        <a href="#"><img id="facebook" src="/resources/img/FB.png" alt=""></a>
+                        <a href="#"><img src="/resources/img/INSTAGRAM.png" alt=""></a>
                     </div>
                 </div>
                 <div>
-                    <label for="name"></label>
-                    <input type="text" name="name" id="name" placeholder="name">
-                    <br>
-                    <label for="email"></label>
-                    <input type="text" name="" id="" placeholder="Email Address">
-                    <br>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <br>
-                    <br>
-                    <a id="consult" href="">CONSULT WITH ME</a>
+                    <form class="form" action="./" method="POST">
+                        <div class="form__item">
+                          <label for="givennames" class="form__label">Name</label>
+                          <input type="text" class="form__input" name="givennames" id="givennames" placeholder="Your Name here" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="Email" class="form__label">Email Address</label>
+                            <input type="email" class="form__input" name="Email" id="Email" placeholder="Please Enter Email Address" required>
+                          </div>
+                        <div class="form__item">
+                          <label for="message" class="form__label">Message</label>
+                          <textarea maxlength="500" class="form__input" name="message" id="message" placeholder="Please enter your message here. (Max. 500 chars)" required></textarea>
+                        </div>
+                        <div class="form__item">
+                          <button class="form__btn" type="submit">Consult With Me</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            
         </section>
     </main>
     <footer>
     </footer>
+    
+    <script src="/resources/js/script.js"></script>
 </body>
 </html>

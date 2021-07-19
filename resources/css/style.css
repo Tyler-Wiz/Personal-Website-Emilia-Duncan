@@ -628,6 +628,32 @@ blockquote{
 }
 /* mobile nav end */
 
+/* About me page Start */
+.about-me-page p{
+    font-size: 16px;
+}
+
+.about-me-page img{
+    margin: 1rem auto;
+    width: 32vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* About me page end */
+
+/* footer Starts*/
+
+footer{
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 700;
+    margin:0 0 1rem 1rem;
+
+}
+
+/* footer ends  */
+
 
 @media screen and (min-width: 360px) and (max-width: 480px) {
     .mainone {
